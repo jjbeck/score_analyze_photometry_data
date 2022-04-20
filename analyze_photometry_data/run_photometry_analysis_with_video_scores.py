@@ -12,7 +12,6 @@ import cv2
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 #Empty dataframe for filtered non-feedingBouts
 nonFilteredFeedingBouts = pd.DataFrame()
 
@@ -47,9 +46,7 @@ for ind in feedingBouts.index:
         plot_bout_no_overlap(plt.subplot(3, 2, ind + 1), mask=filteredFeedingBoutsMask, data=delta_F_over_F_feeding_bout, feeding=True, ind=ind+1)
 
 plt.show()
-
-        
+      
 #Next steps
 #Figure out how to plot multiple feedig bouts on same x-y axis
 #Figure out how to plot photometry data in real-time with video next to it like in synapse
-#Clean up and refactor code with MVC
